@@ -1,0 +1,47 @@
+============================================
+WEATHER PREDICTION API - SIMPLE EXAMPLE
+============================================
+
+This is a SIMPLE, MINIMAL example to help you build the API part of AT2.
+
+FILES IN THIS FOLDER:
+--------------------
+README.md           - Main guide (READ THIS)
+pyproject.toml      - Poetry dependencies
+Dockerfile          - For deployment (13 lines, simple)
+.gitignore          - Git config
+
+app/
+  main.py           - Your API (60 lines)
+  weather_api.py    - Gets weather data (70 lines)
+  predictor.py      - Makes predictions (140 lines)
+  models/           - Put your trained models here
+
+
+WHAT TO DO:
+-----------
+1. Read README.md
+2. Install Poetry: pip install poetry
+3. Run: poetry install
+4. Run: poetry shell
+5. Copy your models to app/models/
+6. Customize app/predictor.py to match YOUR training
+7. Run: poetry run uvicorn app.main:app --reload
+8. Test at: http://localhost:8000/docs
+9. Deploy to Render (instructions in README.md)
+
+
+IMPORTANT:
+----------
+- The code is SIMPLE and SHORT
+- Read the comments in each file
+- Customize predictor.py to match YOUR feature engineering
+- Test locally before deploying
+- Use Swagger docs (/docs) to test your API
+
+
+TOTAL CODE: ~350 lines (not thousands!)
+TOTAL DOCS: 1 README file (not 10!)
+
+
+Questions? Read the README.md file.

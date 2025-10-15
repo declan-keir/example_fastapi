@@ -1,0 +1,18 @@
+Put your trained rain prediction model files here:
+
+Required files:
+- model.joblib (your trained classifier)
+- scaler.joblib (or whatever preprocessing you used - StandardScaler, MinMaxScaler, etc)
+- threshold.txt (optional - if you want to use a specific threshold)
+
+How to save these from your training code:
+
+import joblib
+
+# After training:
+joblib.dump(model, 'model.joblib')
+joblib.dump(scaler, 'scaler.joblib')
+
+# If you have a threshold:
+with open('threshold.txt', 'w') as f:
+    f.write('0.5')  # or whatever threshold you found
