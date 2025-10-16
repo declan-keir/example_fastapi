@@ -25,19 +25,12 @@ pip install poetry
 ### 2. Install Dependencies
 
 ```bash
-cd example
 poetry install
 ```
 
 ### 3. Activate Environment
-
 ```bash
-poetry shell
-```
-
-Or:
-```bash
-poetry env info --path
+poetry env activate
 # Copy the path and run:
 source /path/to/venv/bin/activate
 ```
